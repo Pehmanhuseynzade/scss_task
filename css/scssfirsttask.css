@@ -1,0 +1,115 @@
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+header .navbar .nav__word {
+  font-size: 20px;
+  margin-left: 50px;
+  font-family: "Roboto", sans-serif;
+}
+header .navbar .nav__link {
+  display: flex;
+  margin-left: 50px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+header .navbar .nav__link .home::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  border: 1px solid #ce1212;
+}
+header .navbar .nav__link .home {
+  color: black;
+}
+header .navbar .nav__link ul {
+  display: flex;
+  gap: 20px;
+}
+header .navbar .nav__link ul .links {
+  color: #7f7f90;
+}
+header .navbar .nav__link ul .links:hover {
+  color: black;
+}
+header .navbar .nav__link ul .links {
+  position: relative;
+  transition: 0.5s linear;
+}
+header .navbar .nav__link ul .links::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  height: 1px;
+  color: black;
+  background-color: #ce1212;
+}
+header .navbar .nav__link ul .links:hover::after {
+  width: 100%;
+}
+header .navbar .nav__link ul .dropdown {
+  display: block;
+  position: relative;
+  color: #7f7f90;
+}
+header .navbar .nav__link ul .dropdown:hover {
+  color: black;
+}
+header .navbar .nav__link ul .dropdown:hover a:hover {
+  color: #ce1212;
+}
+header .navbar .nav__link ul .dropdown .down {
+  background-color: white;
+  padding: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  list-style: none;
+  width: 150px;
+  border-radius: 5px;
+  position: absolute;
+  top: 100;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+header .navbar .nav__link ul .dropdown:hover > .down {
+  visibility: visible;
+  opacity: 1;
+}
+header .navbar .button {
+  width: 120px;
+  height: 35px;
+  border-radius: 15px;
+  background-color: #ce1212;
+}
+header .navbar .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navbar .button:hover {
+  background-color: rgba(206, 18, 18, 0.6823529412);
+}
+header .navbar .button a {
+  color: white;
+}
+header .navbar .hamburger {
+  font-size: 20px;
+  display: none;
+}/*# sourceMappingURL=scssfirsttask.css.map */

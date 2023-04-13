@@ -1,0 +1,117 @@
+@import "./variable";
+@import "./extend";
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    .navbar{
+        @extend %center-div;
+        .nav__word{
+            font-size: 20px;
+            margin-left: 50px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .nav__link{
+            display: flex;
+            margin-left: 50px;
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+
+            .home::after{
+                content: " ";
+                display: block;
+                width: 100%;
+                border: 1px solid $hovercolor;
+            }
+            .home{
+                color: $blackcolor;
+            }
+            ul{
+                display: flex;
+                gap: 20px;
+                .links{
+                    color: $linkcolor;
+                }
+                .links:hover{
+                    color: $blackcolor;
+                }
+                .links{
+                    position: relative;
+                    transition: .5s linear;
+               
+                }
+                .links::after{
+                    content:' ';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0px;
+                    height: 1px;
+                    color: $blackcolor;
+                    background-color: $hovercolor;
+                }
+                .links:hover::after{
+                    width: 100%;
+                }
+                .dropdown{
+                    display: block;
+                    position: relative;
+                    color: $linkcolor;
+                    &:hover{
+                        color: $blackcolor;
+                        a:hover{
+                            color: $hovercolor;
+                        }
+                    }
+                    .down{
+                        background-color: white;
+                        padding: 15px;
+                        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                        list-style: none;
+                        width: 150px;
+                        border-radius: 5px;
+                        position: absolute;
+                        top: 100;
+                        transition: .5s;
+                        visibility: hidden;
+                        opacity: 0;
+                    }
+                    &:hover>.down{
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+
+            }
+        }
+        .button{
+            width: 120px;
+            height: 35px;
+            border-radius: 15px;
+            background-color: $hovercolor;
+            &{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &:hover{
+                background-color: #ce1212ae;
+            }
+            a{
+                color: white;
+
+            }
+        }
+        .hamburger{
+            font-size: 20px;
+            display: none;
+        }
+    }
+}

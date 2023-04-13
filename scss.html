@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVBAR with SCSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/scssfirsttask.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav__word">
+                <h2>Yummy<span style="color:red">.</span></h2>
+            </div>
+            <div class="nav__link">
+                <ul>
+                    <li><a class="home" href="#">Home</a></li>
+                    <li><a class="links about" href="#">About</a></li>
+                    <li><a class="links menu" href="#">Menu</a></li>
+                    <li><a class="links events" href="#">Events</a></li>
+                    <li><a class="links chefs" href="#">Chefs</a></li>
+                    <li><a class="links galery" href="#">Galery</a></li>
+                    <li><a class="dropdown" href="#">Drop Down <i class="fa-solid fa-chevron-down"></i>
+                    <ul class="dropdown down">
+                        <li class="drop1">Drop Down 1</li>
+                        <li class="drop2">Drop Down 2</li>
+                        <li class="drop3">Drop Down 3</li>
+                        <li class="drop4">Drop Down 4</li>
+                    </ul>
+                    </a></li>
+                    <li><a class="links contact" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="button"><a class="btn" href="#" role="button">Book a Table</a></div>
+            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+</body>
+
+</html>
